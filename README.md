@@ -53,8 +53,8 @@ Rather than applying unsupervised linear dimensionality reduction (PCA), a **Ran
 1. **Coarse Sweep ($k \in [1, 1620]$):** Evaluated 500 intervals across the full feature space, revealing that validation accuracy peaked below $k=100$ and degraded toward random chance (~58–60%) past $k=800$ due to noisy features.
 2. **Fine-Grained Sweep ($k \in [1, 250]$, step = 1):** Pinpointed the exact global optimum at **$k = 41$ features** (pruning **97.5%** of noisy features).
 
-[Coarse Feature Sweep](assets/k_sweep_1620.png)
-[Fine Feature Sweep](assets/k_sweep_250.png)
+![Coarse Feature Sweep](assets/k_sweep_1620.png)
+![Fine Feature Sweep](assets/k_sweep_250.png)
 
 ### Final Biomedical Classification Results ($k = 41$)
 
@@ -66,7 +66,7 @@ Rather than applying unsupervised linear dimensionality reduction (PCA), a **Ran
 | **F1-Score (Validation)** | - | - | **0.8421** |
 | **ROC-AUC Score** | - | - | **0.9697** |
 
-[ROC Curve](assets/roc_curve.png)
+![ROC Curve](assets/roc_curve.png)
 
 ---
 
